@@ -1,0 +1,5 @@
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DB\bin\Debug\Forum.DB.dacpac
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DB\bin\Debug\Forum.DB.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DB\bin\Debug\Forum.DB.pdb
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DB\obj\Debug\Forum.DB.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DB\obj\Debug\Forum.DB.pdb

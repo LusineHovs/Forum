@@ -1,0 +1,36 @@
+﻿
+@model List<Forum.Core.Models.ThreadViewModel>
+
+<h1>Posts</h1>
+
+@if (Model.Count()!=0) { 
+<h4>@Model.FirstOrDefault().Thread.ThreadName</h4>
+   <h3>@Model.FirstOrDefault().Thread.Description</h3>
+   
+ foreach (var post in Model)
+ {
+       
+        <table class="grid">
+            <tr>
+                <th>@Html.LabelFor(m => post.Post.Description) :</th>
+                <th>@Html.DisplayTextFor(m => post.Post.Description)</th>
+                <th>@Html.LabelFor(m => post.UserInfo.UserName) :</th>
+                <th>@Html.DisplayTextFor(m => post.UserInfo.UserName)</th>
+                <th>@Html.LabelFor(m => post.UserInfo.AccessFailedCount) :</th>
+                <th>@Html.DisplayTextFor(m => post.UserInfo.AccessFailedCount)</th>
+                <th>@Html.LabelFor(m => post.UserInfo.City) :</th>
+                <th>@Html.DisplayTextFor(m => post.UserInfo.City)</th>
+               
+            </tr>
+        </table>
+ }
+
+    <a href='@Url.Action("Reply", "Posts", new { threadId=@Model.FirstOrDefault().Thread.Id})'>
+        <input type="submit" value='Reply' />
+    </a>
+}
+else
+{
+    <h3>There is no posts</h3>
+}
+

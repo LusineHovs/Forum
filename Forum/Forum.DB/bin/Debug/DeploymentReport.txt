@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Post] (Table)
+       [dbo].[Thread] (Table)
+       [dbo].[Topic] (Table)
+       [dbo].[Users] (Table)
+       [dbo].[FK_ThreadId] (Foreign Key)
+       [dbo].[FK_UserId] (Foreign Key)
+       [dbo].[FK__Thread__TopicId__3B75D760] (Foreign Key)
+
+** Supporting actions

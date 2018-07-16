@@ -1,0 +1,17 @@
+﻿
+@model List<Forum.Core.Models.TopicViewModel>
+<h1>Topics</h1>
+<ul>
+    @foreach (var topic in Model)
+    {
+
+
+        <li> <p> @Html.LabelFor(m => topic.Topic.TopicName)</p> <a href="@Url.Action("Index", "Topics", new { id = @topic.Topic?.Id })" > <p>@Html.DisplayTextFor(m => topic.Topic.TopicName) </p></a> </li>
+        <li><p>@Html.LabelFor(m => topic.LastPostThreadName) </p> <p>@Html.DisplayFor(m => topic.LastPostThreadName) </p></li>
+        <li><p>@Html.LabelFor(m => topic.PostedDate) </p> <p>@Html.DisplayFor(m => topic.PostedDate) </p></li>
+        <li><p>@Html.LabelFor(m => topic.TotalPostCount) </p> <p>@Html.DisplayFor(m => topic.TotalPostCount) </p></li>
+
+
+       
+    }
+</ul>

@@ -1,0 +1,7 @@
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\bin\Debug\Forum.DAL.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\bin\Debug\Forum.DAL.pdb
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\bin\Debug\Forum.Core.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\bin\Debug\Forum.Core.pdb
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\obj\Debug\Forum.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\obj\Debug\Forum.DAL.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.DAL\obj\Debug\Forum.DAL.pdb

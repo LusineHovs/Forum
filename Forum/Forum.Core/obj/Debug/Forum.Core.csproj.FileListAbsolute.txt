@@ -1,0 +1,5 @@
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.Core\bin\Debug\Forum.Core.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.Core\bin\Debug\Forum.Core.pdb
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.Core\obj\Debug\Forum.Core.dll
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.Core\obj\Debug\Forum.Core.pdb
+C:\Users\Lusine\Desktop\Forum\Forum\Forum.Core\obj\Debug\Forum.Core.csprojResolveAssemblyReference.cache

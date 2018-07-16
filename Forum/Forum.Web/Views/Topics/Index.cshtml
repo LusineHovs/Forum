@@ -1,0 +1,31 @@
+﻿@model List<Forum.Core.Models.TopicThreadViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Threads</h1>
+
+<h2>@Html.LabelFor(m => @Model.FirstOrDefault().Topic.TopicName) : @Model.FirstOrDefault().Topic.TopicName</h2>
+<ul>
+@foreach (var thread in Model)
+{
+    if (thread.UserName != "" && thread.Postsdate != "" && thread.Count != 0)
+    {
+
+    <li> <a href="@Url.Action("Index", "Thread", new { id = @thread.Thread?.Id})"> <p>@thread.Thread.ThreadName </p></a> </li>
+    <li><p>@Html.LabelFor(m => thread.UserName) </p> <p>@Html.DisplayFor(m => thread.UserName) </p></li>
+    <li><p>@Html.LabelFor(m => thread.Postsdate) </p> <p>@Html.DisplayFor(m => thread.Postsdate) </p></li>
+    <li><p>@Html.LabelFor(m => thread.Count) </p> <p>@Html.DisplayFor(m => thread.Count) </p></li>
+    }
+    else
+    {
+        <li> <a href="@Url.Action("Index", "Thread", new { id = @thread.Thread?.Id})"> <p>@thread.Thread.ThreadName </p></a> </li>
+        <li><p>no posts yet</p></li>
+    }
+}
+
+</ul>
+
+<a href='@Url.Action("Add", "Thread", new { topicId = Model.FirstOrDefault().Topic.Id})'>
+    <input type="submit" value='Add Thread' />
+</a>
